@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jogo da Velha</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <script src="scripts/script.js" type="text/javascript"></script>
+        
+        <!--Favicons-->
+        <link rel="shortcut icon" type="img/x-icon" href="img/favicon.ico" />
+        <link rel="icon" href="img/favicon.ico" sizes="256x256">
+        
+    </head>
+    <body onload="limparPs()">
+        
+        <form id="formNomes" action="">
+            <div id="nomes">
+                <p>
+                    Jogador (a) 1
+                </p>
+                <input type="text" id="txtJogador1" maxlength="15">
+                <p>
+                    Jogador (a) 2
+                </p>
+                <input type="text" id="txtJogador2" maxlength="15">
+                <div>
+                    <button type="reset">LIMPAR</button>
+                    <button type="button" onclick="enviarNomes()">JOGAR</button>
+                </div>
+            </div>
+        </form>
+        
+        <div id="menu" onclick="novoJogo()" onmouseover="tamanhoMenu1()" onmouseout="tamanhoMenu2()">
+            <p>
+                NOVO JOGO
+            </p>
+        </div>
+        
+        <div id="tabuleiro">
+            <div class="caixa" id="cel00" onmouseover="mudarCor('cel00','blue')" onmouseout="mudarCor('cel00','white')" onclick="marcar('txt00')">
+                <p id="txt00">
+                </p>
+            </div>
+            <div class="caixa" id="cel01" onmouseover="mudarCor('cel01','blue')" onmouseout="mudarCor('cel01','white')" onclick="marcar('txt01')">
+                <p id="txt01">
+                </p>
+            </div>
+            <div class="caixa" id="cel02" onmouseover="mudarCor('cel02','blue')" onmouseout="mudarCor('cel02','white')" onclick="marcar('txt02')">
+                <p id="txt02">
+                </p>
+            </div>
+            <div class="caixa" id="cel10" onmouseover="mudarCor('cel10','blue')" onmouseout="mudarCor('cel10','white')" onclick="marcar('txt10')">
+                <p id="txt10">
+                </p>
+            </div>
+            <div class="caixa" id="cel11" onmouseover="mudarCor('cel11','blue')" onmouseout="mudarCor('cel11','white')" onclick="marcar('txt11')">
+                <p id="txt11">
+                </p>
+            </div>
+            <div class="caixa" id="cel12" onmouseover="mudarCor('cel12','blue')" onmouseout="mudarCor('cel12','white')" onclick="marcar('txt12')">
+                <p id="txt12">
+                </p>
+            </div>
+            <div class="caixa" id="cel20" onmouseover="mudarCor('cel20','blue')" onmouseout="mudarCor('cel20','white')" onclick="marcar('txt20')">
+                <p id="txt20">
+                </p>
+            </div>
+            <div class="caixa" id="cel21" onmouseover="mudarCor('cel21','blue')" onmouseout="mudarCor('cel21','white')" onclick="marcar('txt21')">
+                <p id="txt21">
+                </p>
+            </div>
+            <div class="caixa" id="cel22" onmouseover="mudarCor('cel22','blue')" onmouseout="mudarCor('cel22','white')" onclick="marcar('txt22')">
+                <p id="txt22">
+                </p>
+            </div>
+        </div>
+        <h1 id="fraseGanhador">
+        </h1>
+    </body>
+</html>

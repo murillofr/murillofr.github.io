@@ -1,0 +1,234 @@
+body {
+    background-color: darkgray;
+    margin-top: 80px;
+    font-family: verdana;
+}
+
+@-webkit-keyframes animaMenuIn {
+    0%   {
+        height: 0px;
+        opacity: 0;
+    }
+    100% {
+        height: 66px;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes animaNomesIn {
+    0%   {
+        height: 0px;
+        opacity: 0;
+    }
+    100% {
+        height: 254px;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes animaTabuleiroIn {
+    0%   {
+        height: 0px;
+        opacity: 0;
+    }
+    100% {
+        height: 473px;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes animaMenuOut {
+    0%   {
+        height: 66px;
+        opacity: 1;
+    }
+    100% {
+        height: 0px;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes animaNomesOut {
+    0%   {
+        height: 254px;
+        opacity: 1;
+    }
+    100% {
+        height: 0px;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes animaTabuleiroOut {
+    0%   {
+        height: 473px;
+        opacity: 1;
+    }
+    100% {
+        height: 0px;
+        opacity: 0;
+    }
+}
+
+/* Standard syntax */
+@keyframes animaMenuIn {
+    0%   {
+        height: 0px;
+        opacity: 0;
+    }
+    100% {
+        height: 66px;
+        opacity: 1;
+    }
+}
+@keyframes animaNomesIn {
+    0%   {
+        height: 0px;
+        opacity: 0;
+    }
+    100% {
+        height: 254px;
+        opacity: 1;
+    }
+}
+@keyframes animaTabuleiroIn {
+    0%   {
+        height: 0px;
+        opacity: 0;
+    }
+    100% {
+        height: 473px;
+        opacity: 1;
+    }
+}
+@keyframes animaMenuOut {
+    0%   {
+        height: 66px;
+        opacity: 1;
+    }
+    100% {
+        height: 0px;
+        opacity: 0;
+    }
+}
+@keyframes animaNomesOut {
+    0%   {
+        height: 254px;
+        opacity: 1;
+    }
+    100% {
+        height: 0px;
+        opacity: 0;
+    }
+}
+@keyframes animaTabuleiroOut {
+    0%   {
+        height: 473px;
+        opacity: 1;
+    }
+    100% {
+        height: 0px;
+        opacity: 0;
+    }
+}
+
+#menu {
+    position: absolute;
+    background-color: white;
+    top: -50px;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    transition: all 0.5s;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 3px black;
+    overflow: hidden;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+}
+#menu:hover {
+    top: 0px;
+}
+#menu p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#nomes {
+    margin: 0 auto;
+    text-align: center;
+    height: 254px;
+    width: 471px;
+    overflow: hidden;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    box-shadow: 0px 0px 15px 3px black;
+}
+
+#nomes p {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#txtJogador1, #txtJogador2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: red;
+    border: 1px solid black;
+    outline: none;
+    width: 216px;
+}
+
+button {
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 0px;
+    width: 100px;
+    background-color: gray;
+    margin-top: 15px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+button:hover {
+    background-color: red;
+}
+button:focus {
+    outline: none;
+}
+
+#tabuleiro {
+    width: 450px;
+    margin: 0 auto;
+    /*margin-top: -2px;*/
+    background-color: black;
+    overflow: hidden;
+    padding: 5px;
+    box-shadow: 0px 0px 15px 3px black;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+}
+.caixa {
+    width: 140px;
+    height: 140px;
+    float: left;
+    margin: 5px;
+    background-color: white;
+}
+.caixa p {
+    margin: 0;
+    font-weight: bold;
+    color: black;
+    font-size: 114px;
+    text-align: center;
+    text-shadow: 5px 5px 25px black;
+}
+
+#fraseGanhador {
+    text-align: center;
+    font-size: 25px;
+    color: red;
+    margin-bottom: 0;
+}
